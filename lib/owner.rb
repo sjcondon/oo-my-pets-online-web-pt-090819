@@ -33,18 +33,18 @@ class Owner
     dog.all.select{|d| d.owner == self}
   end
   
-#   def pets
-#     @@pets
-#   end
-
-
 #   def buy_cat(cat)
 #     @@pets[:cats] << Cat.new(cat)
 #   end
 
 #   def buy_dog(dog)
 #     @@pets[:dogs] << Dog.new(dog)
+  end
+
+#   def pets
+#     @@pets
 #   end
+
 
 #   def walk_dogs
 #     @@pets[:dogs].each do |dog|
