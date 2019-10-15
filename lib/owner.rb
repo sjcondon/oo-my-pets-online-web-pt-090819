@@ -41,16 +41,18 @@ class Owner
     Dat.new(name,self)
   end
   
-  def walk_dogs
-    @@pets[:dogs].each do |dog|
-      dog.mood = 'happy'
+  def walk_dog
+    dog.each{|d| d.mood ="happy"}
     end
+  
+  def feed_cat
+    cat.each{|c| c.mood ="happy"}
   end
 
 
-#   def pets
-#     @@pets
-#   end
+  def pets
+    @@pets
+  end
 
 
 #   def play_with_cats
