@@ -18,17 +18,21 @@ class Owner
   end
 
   def self.count
-    @@all.length
+    @@all.count
   end
 
-#   def self.reset_all
-#     @@all.clear
-#   end
+  def self.reset_all
+    @@all.clear
+  end
 
-#   def say_species
-#     "I am a #{@species}."
-#   end
+  def cats
+    cat.all.select{|c| c.owner == self}
+  end
 
+  def dogs
+    dog.all.select{|d| d.owner == self}
+  end
+  
 #   def pets
 #     @@pets
 #   end
